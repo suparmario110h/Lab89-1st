@@ -1,0 +1,60 @@
+
+
+/* =========== 
+Fade Animation Css
+=========== */
+.invisible {
+  transition: opacity 2.5s ease;
+  opacity: 0.0;
+  transform: translateY(20px);
+}
+
+.visible {
+  transition: opacity 2.5s ease;
+  opacity: 1.0;
+  transform: translateY(0);
+}
+
+
+/* =========== 
+Common 
+=========== */
+
+.button {
+  margin: 0 auto;
+}
+
+/* =========== 
+Header 
+=========== */
+
+/* =========== 
+Main visual 
+=========== */
+
+/* =========== 
+Course 
+=========== */
+main section.food {
+  display: block !important;
+  background-color: #10151a;
+}
+.flex-container {
+  display: flex;
+}
+
+main section.food .texts {
+  padding: 20px 40px;
+}
+.btn-wrap {
+  padding: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+/* =========== 
+Footer
+=========== */
