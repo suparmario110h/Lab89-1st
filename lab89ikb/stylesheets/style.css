@@ -58,3 +58,18 @@ main section.food .texts {
 /* =========== 
 Footer
 =========== */
+
+
+/* =========== 
+Google map
+=========== */
+iframe{
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+   
+iframe:hover{
+  transition: filter 0.8s ease;
+  -webkit-filter: grayscale(0) saturate(2);
+  filter: grayscale(0) saturate(2);
+}
