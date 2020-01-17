@@ -1,5 +1,3 @@
-
-
 /* =========== 
 Fade Animation Css
 =========== */
@@ -35,6 +33,8 @@ Common
 Header 
 =========== */
 
+
+
 /* =========== 
 Main visual 
 =========== */
@@ -66,7 +66,8 @@ main section.food {
   display: flex;
 }
 
-main section.food .texts {
+main section.food .texts,
+main section.contact .texts {
   padding: 20px 40px;
 }
 .texts-box {
@@ -99,7 +100,61 @@ main section.mori .texts {
 /* =========== 
 Contact
 =========== */
-
+.contact {
+  background-color: #10151a;
+}
+.icon-box {
+  height: 180px;
+}
+.icon-space {
+  display: table;
+  height: 180px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.icon-space:nth-child(1):after,
+.icon-space:nth-child(2):after
+ {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+}
+.icon-posi {
+  margin: auto 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+.icon-text {
+  font-size: 14px;
+  margin: 10px auto;
+}
+.tel {
+  width: 25%;
+/*  background: url(../images/contact/tel.png) no-repeat;
+  background-size: cover;
+  width: 24%;
+  height: 46%;*/
+}
+.line {
+  width: 25%;
+  /*background: url(../images/contact/line.png) no-repeat;
+  background-size: cover;
+  width: 24%;
+  height: 46%;*/
+}
+.mail {
+  width: 30%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*background: url(../images/contact/mail.png) no-repeat;
+  background-size: cover;
+  width: 27%;
+  height: 35%;*/
+}
 
 /* =========== 
 Footer
