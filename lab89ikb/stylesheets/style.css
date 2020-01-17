@@ -23,7 +23,14 @@ Common
 .button {
   margin: 0 auto;
 }
-
+.title_space {
+  margin-bottom: 20px;
+}
+.texts {
+  text-align: center;
+  margin: auto 0;
+}
+.mb3 {margin-bottom: 3px;}
 /* =========== 
 Header 
 =========== */
@@ -31,7 +38,23 @@ Header
 /* =========== 
 Main visual 
 =========== */
+.logo-wrap {
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 105px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+}
 
+.logo-box {
+    width: 260px;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    background: url(../images/logo.png);
+    background-size: cover; 
+}
 /* =========== 
 Course 
 =========== */
@@ -46,6 +69,10 @@ main section.food {
 main section.food .texts {
   padding: 20px 40px;
 }
+.texts-box {
+  line-height: 3rem;
+}
+
 .btn-wrap {
   padding: 3rem;
 }
@@ -55,6 +82,25 @@ main section.food .texts {
     flex-direction: column;
   }
 }
+
+/* =========== 
+森尻さん
+=========== */
+main section.mori {
+  background-color: #080A0E;
+}
+main section.food .images {
+  width: 40%;
+}
+main section.mori .texts {
+  background-color: #080A0E;
+}
+
+/* =========== 
+Contact
+=========== */
+
+
 /* =========== 
 Footer
 =========== */
