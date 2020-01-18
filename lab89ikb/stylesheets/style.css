@@ -100,17 +100,6 @@ Main visual
     width: 136px !important;
   }
 }
-
-
-/* =========== 
-About
-=========== */
-@media screen and (min-width: 768px) {
-  .sp_br{
-    display: none;
-  }
-}
-
 /* =========== 
 Course 
 =========== */
@@ -154,12 +143,6 @@ main section.mori {
 }
 main section.mori .texts {
   background-color: #080A0E;
-}
-
-@media screen and (max-width: 768px) {
-  main section.mori {
-  }
-
 }
 
 /* =========== 
@@ -252,7 +235,6 @@ main section.contact .texts {
 @media screen and (max-width: 768px) {
   .icon-box {
     height: 110px;
-    padding-top: 40px;
   }
   .icon-text {
     font-size: 10px;
@@ -321,8 +303,6 @@ iframe:hover{
     transform: translateY(0);
   }
 }
-
-
 
 
 
