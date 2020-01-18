@@ -37,15 +37,17 @@ Common
 }
 .texts {
   text-align: center;
-  margin: auto 0;
+  margin: auto auto;
 }
 .mb3 {margin-bottom: 3px;}
 
 .flex-container {
   display: flex;
+  width: 100%;
 }
 .flex {
   display: flex;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -100,6 +102,16 @@ Main visual
     width: 136px !important;
   }
 }
+
+/* =========== 
+About
+=========== */
+@media screen and (min-width: 768px) {
+  .sp_br{
+    display: none;
+  }
+}
+
 /* =========== 
 Course 
 =========== */
@@ -124,6 +136,7 @@ main section.food .texts {
 @media screen and (max-width: 768px) {
   .flex-container {
     flex-direction: column;
+    width: 100%;
   }
   .texts-box {
     line-height: 2rem;
@@ -235,6 +248,8 @@ main section.contact .texts {
 @media screen and (max-width: 768px) {
   .icon-box {
     height: 110px;
+    padding-top: 40px;
+
   }
   .icon-text {
     font-size: 10px;

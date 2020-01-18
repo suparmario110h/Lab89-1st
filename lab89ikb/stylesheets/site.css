@@ -712,11 +712,13 @@ main section.mori {
         display: block
     }
 }
-main section.food .texts,
-main section.mori .texts{
+main section.food .texts{
     padding: 110px 8%;
     width: 50%;
     background: #10151a
+}
+main section.mori .texts {
+    padding: 20px 8%;
 }
 @media(max-width: 768px) {
     main section.food .texts,
@@ -759,13 +761,17 @@ main section.food .images {
 }
 main section.mori .images {
      width: 40%;
+     height: 100%;
      object-fit: cover;
 }
 @media(max-width: 768px) {
     main section.food .images,
     main section.contact .images,
-    main section.mori .images {
+    main section.mori .images{
         width: 100%
+    }
+    main section.mori .images {
+        height: 50%;
     }
 }
 main section.food .images .slick-slider {
