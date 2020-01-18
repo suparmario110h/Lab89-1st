@@ -171,6 +171,10 @@ main section.contact .texts {
 
 .icon-posi a {
   transition: color .5s, text-decoration .3s;
+  opacity: 1;
+}
+.icon-space img {
+  transition: opacity .5s ease-out;
 }
 .i_tel:hover a {
   color: indianRed;
@@ -180,6 +184,9 @@ main section.contact .texts {
 }
 .i_contact:hover a {
   color: lightSeaGreen;
+}
+.icon-space img:hover {
+  opacity: .3;
 }
 
 
