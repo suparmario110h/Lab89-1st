@@ -156,11 +156,12 @@ main section.contact .texts {
 }
 .icon-box {
   height: 180px;
+  width: 100%;
 }
 .icon-space {
   display: table;
   height: 180px;
-  width: 100%;
+  width: 33.3%;
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
@@ -302,5 +303,11 @@ iframe:hover{
     transform: translateY(0);
   }
 }
+
+
+
+
+
+
 
 
