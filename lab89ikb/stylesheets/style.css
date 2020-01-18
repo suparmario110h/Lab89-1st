@@ -71,7 +71,11 @@ Header
   }
 }
 
-
+@media screen and (max-width: 320px) {
+  .top_tel {
+    left: 55%;
+  }
+}
 /* =========== 
 Main visual 
 =========== */
