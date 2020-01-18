@@ -100,6 +100,17 @@ Main visual
     width: 136px !important;
   }
 }
+
+
+/* =========== 
+About
+=========== */
+@media screen and (min-width: 768px) {
+  .sp_br{
+    display: none;
+  }
+}
+
 /* =========== 
 Course 
 =========== */
@@ -140,9 +151,17 @@ main section.food .texts {
 =========== */
 main section.mori {
   background-color: #080A0E;
+  height: 537px;
 }
 main section.mori .texts {
   background-color: #080A0E;
+}
+
+@media screen and (max-width: 768px) {
+  main section.mori {
+    height: 717px;
+  }
+
 }
 
 /* =========== 
@@ -235,6 +254,7 @@ main section.contact .texts {
 @media screen and (max-width: 768px) {
   .icon-box {
     height: 110px;
+    padding-top: 40px;
   }
   .icon-text {
     font-size: 10px;
