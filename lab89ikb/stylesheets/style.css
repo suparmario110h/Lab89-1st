@@ -162,6 +162,7 @@ main section.contact .texts {
   width: 1px;
   height: 100%;
   background-color: #fff;
+  opacity: 0.3;
 }
 .icon-posi {
   margin: auto 0;
@@ -220,6 +221,12 @@ main section.contact .texts {
 
 /* Icon ３つ */
 @media screen and (max-width: 768px) {
+  .icon-box {
+    height: 110px;
+  }
+  .icon-text {
+    font-size: 10px;
+  }
   .icon-space {
     height: 100px;
     padding: 0px;
