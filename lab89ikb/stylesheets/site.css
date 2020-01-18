@@ -375,11 +375,13 @@ p {
     display: inline;
     margin-right: 38px
 }
-.pc-header .menu .menu-item > a {
+.pc-header .menu .menu-item > a,
+.top_tel>a {
     display: inline-block;
     position: relative
 }
-.pc-header .menu .menu-item>a:after {
+.pc-header .menu .menu-item>a:after,
+.top_tel>a:after {
     -webkit-transition: width 0.2s ease;
     transition: width 0.2s ease;
     position: absolute;
@@ -390,7 +392,8 @@ p {
     width: 0;
     background: #ffffff
 }
-.pc-header .menu .menu-item>a:hover:after {
+.pc-header .menu .menu-item>a:hover:after,
+.top_tel>a:hover:after {
     width: 100%
 }
 .pc-header .menu .links {
@@ -700,22 +703,25 @@ main section.concept p {
         line-height: 2.2
     }
 }
-main section.food {
+main section.food,
+main section.mori {
     display: flex
 }
 @media(max-width: 768px) {
-    main section.food, .contact {
+    main section.food, .contact, .mori {
         display: block
     }
 }
-main section.food .texts{
+main section.food .texts,
+main section.mori .texts{
     padding: 110px 8%;
     width: 50%;
     background: #10151a
 }
 @media(max-width: 768px) {
     main section.food .texts,
-    main section.contact .texts {
+    main section.contact .texts,
+    main section.mori .texts {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         width: 100%;
@@ -725,12 +731,14 @@ main section.food .texts{
 }
 @media(max-width: 768px) {
     main section.food .texts h3,
-    main section.contact .texts h3 {
+    main section.contact .texts h3,
+    main section.mori .texts h3 {
         margin: 25px 0 10px
     }
 }
 main section.food .texts p,
-main section.contact .texts p {
+main section.contact .texts p,
+main section.mori .texts p {
     font-family: "Times New Roman", Times, serif;
     letter-spacing: 0.216rem;
     color: #828282
@@ -749,9 +757,14 @@ main section.food .images {
     width: 50%;
     background: #070b11
 }
+main section.mori .images {
+     width: 40%;
+     object-fit: cover;
+}
 @media(max-width: 768px) {
     main section.food .images,
-    main section.contact .images {
+    main section.contact .images,
+    main section.mori .images {
         width: 100%
     }
 }
@@ -768,7 +781,8 @@ main section.food .images .slick-slider {
     }
 }
 main section.food .images img,
-main section.contact .images img {
+main section.contact .images img,
+main section.mori .images img {
     width: 100%;
     height: auto
 }

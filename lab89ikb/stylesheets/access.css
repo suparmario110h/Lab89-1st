@@ -1,0 +1,13 @@
+/* =========== 
+Accessページ
+=========== */
+
+@media screen and (max-width: 768px) {
+  .container.visible.access {
+    margin-top: 10% !important;
+  }
+}
+
+.container.visible.access {
+  margin-top: 5%;
+  }

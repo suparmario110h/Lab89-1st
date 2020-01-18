@@ -11,8 +11,19 @@ Fade Animation Css
   transition: opacity 2.5s ease;
   opacity: 1.0;
   transform: translateY(0);
+/*  animation-name: fadein;
+  animation-duration: 3s;*/
 }
-
+/*@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}*/
 
 /* =========== 
 Common 
@@ -29,9 +40,26 @@ Common
   margin: auto 0;
 }
 .mb3 {margin-bottom: 3px;}
+
+.flex-container {
+  display: flex;
+}
+.flex {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .only_pc {
+    display: none;
+  }
+}
 /* =========== 
 Header 
 =========== */
+.top_tel {
+  font-size: 1.8rem;
+  margin-left: 10px;
+}
 
 
 
@@ -55,6 +83,16 @@ Main visual
     background: url(../images/logo.png);
     background-size: cover; 
 }
+
+/* Top 黒帯とロゴ */
+@media screen and (max-width: 414px) {
+  .logo-wrap {
+    height: 55px !important;
+  }
+  .logo-box {
+    width: 136px !important;
+  }
+}
 /* =========== 
 Course 
 =========== */
@@ -62,16 +100,18 @@ main section.food {
   display: block !important;
   background-color: #10151a;
 }
-.flex-container {
-  display: flex;
+
+main section.food .texts {
+  padding: 20px 0;
 }
 
-main section.food .texts,
-main section.contact .texts {
-  padding: 20px 40px;
+.food_space {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .texts-box {
   line-height: 3rem;
+  margin-bottom: 3rem;
 }
 
 .btn-wrap {
@@ -90,9 +130,6 @@ main section.contact .texts {
 main section.mori {
   background-color: #080A0E;
 }
-main section.food .images {
-  width: 40%;
-}
 main section.mori .texts {
   background-color: #080A0E;
 }
@@ -102,6 +139,9 @@ Contact
 =========== */
 .contact {
   background-color: #10151a;
+}
+main section.contact .texts {
+  padding: 40px;
 }
 .icon-box {
   height: 180px;
@@ -128,26 +168,41 @@ Contact
   display: table-cell;
   vertical-align: middle;
 }
+
+.icon-posi a {
+  transition: color .5s, text-decoration .3s;
+}
+.i_tel:hover a {
+  color: indianRed;
+}
+.i_line:hover a {
+  color: #18B901;
+}
+.i_contact:hover a {
+  color: lightSeaGreen;
+}
+
+
 .icon-text {
   font-size: 14px;
   margin: 10px auto;
 }
 .tel {
-  width: 25%;
+  width: 17%;
 /*  background: url(../images/contact/tel.png) no-repeat;
   background-size: cover;
   width: 24%;
   height: 46%;*/
 }
 .line {
-  width: 25%;
+  width: 17%;
   /*background: url(../images/contact/line.png) no-repeat;
   background-size: cover;
   width: 24%;
   height: 46%;*/
 }
 .mail {
-  width: 30%;
+  width: 20%;
   margin-top: 5px;
   margin-bottom: 5px;
   /*background: url(../images/contact/mail.png) no-repeat;
@@ -155,6 +210,31 @@ Contact
   width: 27%;
   height: 35%;*/
 }
+
+/* Icon ３つ */
+@media screen and (max-width: 768px) {
+  .icon-space {
+    height: 100px;
+    padding: 0px;
+  }
+  .icon-space:nth-child(1):after,
+  .icon-space:nth-child(2):after
+   {
+    height: 90%;
+  }
+  .tel {
+    width: 40%;
+  }
+  .line {
+    width: 40%;
+  }
+  .mail {
+    width: 44%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+}
+
 
 /* =========== 
 Footer
