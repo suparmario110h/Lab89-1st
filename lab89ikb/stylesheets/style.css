@@ -112,10 +112,6 @@ main section.food .texts {
   padding: 20px 0;
 }
 
-.food_space {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 .texts-box {
   line-height: 3rem;
   margin-bottom: 3rem;
@@ -128,6 +124,14 @@ main section.food .texts {
 @media screen and (max-width: 768px) {
   .flex-container {
     flex-direction: column;
+  }
+  .texts-box {
+    line-height: 2rem;
+    margin-bottom: 0;
+　}
+  .food_space {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -182,7 +186,7 @@ main section.contact .texts {
   opacity: 1;
 }
 .icon-space img {
-  transition: opacity .5s ease-out;
+  transition: opacity .3s ease-out;
 }
 .i_tel:hover a {
   color: indianRed;
@@ -275,3 +279,28 @@ iframe:hover{
   -webkit-filter: grayscale(0) saturate(2);
   filter: grayscale(0) saturate(2);
 }
+
+/*=======================
+1. Fadein Animation
+=======================*/
+.sample-text {
+  opacity: 0;
+}
+
+.sample-text.show {
+  opacity: 1;
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
