@@ -151,7 +151,6 @@ main section.food .texts {
 =========== */
 main section.mori {
   background-color: #080A0E;
-  height: 537px;
 }
 main section.mori .texts {
   background-color: #080A0E;
@@ -159,7 +158,6 @@ main section.mori .texts {
 
 @media screen and (max-width: 768px) {
   main section.mori {
-    height: 717px;
   }
 
 }
