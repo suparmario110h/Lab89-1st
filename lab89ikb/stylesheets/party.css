@@ -1,3 +1,9 @@
+
+
+/* =========== 
+1. Concept   2. Box
+=========== */
+
 .title_party {
   text-align: center;
   font-size: 24px;
@@ -8,8 +14,11 @@
   height: 300px;
 }
 .party-box a {
-  /*display: inline-block;*/
-  position: relative
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .party-box a:after {
     -webkit-transition: width 0.2s ease;
@@ -21,27 +30,29 @@
     width: 0;
     background: #ffffff
 }
-.party-box a:hover:after {
+.party-box:hover a:after {
     width: 100%
 }
 .bg-mask {
   background-color: rgba(0,0,0, .5);
+  transition: all 0.5s;
   height: 100%;
   width: 100%;
-  display: table;
+  position: relative;
+
 }
 .bg-mask:hover {
   background-color: rgba(0,0,0, .2);
 }
-.business {
+.bg_business {
   background: url(../images/party/business_private.JPG);
   background-size: cover; 
 }
-.wedding {
+.bg_wedding {
   background: url(../images/party/wedding.jpg);
   background-size: cover; 
 }
-.rental {
+.bg_rental {
   background: url(../images/party/space_rental.jpg);
   background-size: cover; 
 }
@@ -49,9 +60,41 @@
 .party-title {
   text-align: center;
   font-size: 20px;
+  position: relative;
+  top: 50%;
 }
 
-.party-box a {
-  display: table-cell;
-  vertical-align: middle;
+/* =========== 
+2.Bussiness , 3.Wedding
+=========== */
+.plan-box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 10px;
 }
+
+main section.wedding {
+  background-color: #ffffff;
+  color: #000;
+}
+.wedding h2:after {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #000;
+}
+
+.wedding .plan-box {
+  box-shadow: 1px 1px 7px #999;
+}
+
+
+
+
+
+
+

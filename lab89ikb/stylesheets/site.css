@@ -594,7 +594,7 @@ main section.main-visual {
     align-items: center;
     width: 100%;
     height: 680px;
-    background: url("../images/main-visual3.jpg");
+    background: url("../images/main-visual3.jpg")  center center;
     background-position: 50% 20% no-repeat center center;
     background-size: cover
 }

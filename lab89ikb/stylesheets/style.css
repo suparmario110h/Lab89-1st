@@ -33,7 +33,7 @@ Common
   margin: 0 auto;
 }
 .title_space {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .texts {
   text-align: center;
@@ -48,6 +48,15 @@ Common
 .flex {
   display: flex;
   width: 100%;
+}
+main section {
+  background-color: #080A0E;
+  display: flex;
+  padding: 74px 0 82px;
+}
+
+main section.contents  {
+    padding: 0;
 }
 
 @media screen and (max-width: 768px) {
