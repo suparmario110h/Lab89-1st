@@ -150,11 +150,31 @@ main section.wedding {
   .rental .texts-box {
     text-align: center !important;
   }
+  .rental .plan-box {
+    max-width: 319px;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
   .box-right {
     text-align: left;
      margin-right: 0; 
   }
+  .space_s_day {
+    margin-right: 12px;
+  }
+  .space_m_day {
+    margin-right: 30px;
+  }
+  .space_l_day {
+    margin-right: 40px;
+  }
 }
+@media screen and (max-width: 320px) {
+  .rental .plan-box {
+    max-width: 305px;
+  }
+}
+
 
 /* =========== 
 5.Equipment
@@ -193,7 +213,7 @@ main section.equipment,
 }
 
 .equipment .images {
-  width: 379px;
+  width: 546px;
 }
 
 .eqipment-img {
@@ -202,26 +222,34 @@ main section.equipment,
   object-fit: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1133px) {
+  .equipment .flex-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .images {
+    order: 1;
+  }
   .table {
     order: 2;
     font-size: 1rem;
   }
+  .equipment .images {
+    width: 579px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
   .table, .equipment .images {
     width: 316px;
   }
   .table td {
     padding: 10px;
   }
-  .images {
-    order: 1;
-  }
   .eqipment-img{
     height: 211px;
   }
 }
-
-
 /* Option */
 .option .border {
     height: 1px;
@@ -231,7 +259,7 @@ main section.equipment,
 }
 .option-title {
   padding: 13px;
-  width: 30%;
+  width: 80%;
   margin: 0 auto 40px;
   box-sizing: border-box;
 }
@@ -253,7 +281,7 @@ main section.equipment,
 }
 .icon {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 14px;
   margin-bottom: 30px;
   width: 50px;
   height: 50px;
