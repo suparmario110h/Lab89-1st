@@ -146,6 +146,16 @@ main section.wedding {
   margin-right: 60px;
 }
 
+@media screen and (max-width: 768px) {
+  .rental .texts-box {
+    text-align: center !important;
+  }
+  .box-right {
+    text-align: left;
+     margin-right: 0; 
+  }
+}
+
 /* =========== 
 5.Equipment
 =========== */
@@ -220,22 +230,43 @@ main section.equipment,
     background: #000;
 }
 .option-title {
-  margin-bottom: 20px;
+  padding: 13px;
+  width: 30%;
+  margin: 0 auto 40px;
+  box-sizing: border-box;
+}
+.title-black{
+  background-color: #000;
+  color: #fff;
+}
+.title-white{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 7px #999;
+  color: #000;
 }
 .f_container {
   display: flex;
   width: 100%;
-  justify-content: center;
-  /*flex-wrap: wrap;*/
+  justify-content: left;
+  flex-wrap: wrap;
 }
 .icon {
   display: inline-block;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  width: 50px;
+  height: 50px;
 }
 .icon img {
-  width: 30%;
+  width: 100%;
 }
 
-
+@media screen and (max-width: 768px) {
+  .option .border {
+    margin: -20px auto 30px;
+  }
+}
 
 
 
