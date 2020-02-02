@@ -1,0 +1,115 @@
+
+/* =========== 
+1. Concept
+=========== */
+.catering_concept {
+  background-color: #7E7F7E !important;
+  padding: 40px 0;
+}
+
+main section.concept p {
+ color: #fff !important;
+}
+
+main sction
+
+/* =========== 
+2. Course
+=========== */
+.catering_food,
+main section.catering_food .texts,
+main section.catering_food .images {
+  background-color: #EDEDED !important;
+  color: #828282 !important;
+}
+main .catering_food {
+  padding: 0;
+}
+.catering_food h2:after,
+.catering_contact h2:after {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #828282;
+}
+main section.catering_food .texts {
+    padding: 40px 0 !important;
+  }
+
+@media screen and (max-width: 768px) {
+  .food_space {
+    margin-top: 0;
+  }
+  .catering_food div,
+  .catering_food p,
+  .catering_food ul {
+    font-size: 1.1rem;
+  }
+  .catering_food .texts-box{
+    line-height: 2.9rem;
+  }
+}
+@media screen and (min-width: 769px){
+  .slick-slider {
+    height: 100%;
+  }
+  .slick-list {
+    height: 100%;
+  }
+  .slick-track {
+    height: 100%;
+  }
+  .slick-slide {
+    height: 100%;
+  }
+  main section.food .images img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+/* =========== 
+3. Contact
+=========== */
+.catering_contact {
+  background-color: #EDEDED !important;
+  color: #828282 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
