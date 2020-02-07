@@ -227,7 +227,7 @@ main section.equipment,
     flex-direction: column;
     width: 100%;
   }
-  .images {
+  .equipment .images {
     order: 1;
   }
   .table {

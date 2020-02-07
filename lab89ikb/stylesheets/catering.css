@@ -2,16 +2,22 @@
 /* =========== 
 1. Concept
 =========== */
+main section.catering-visual {
+  background: url("../images/catering/top-visual.jpg") center center !important;
+  background-size: cover !important;
+}
 .catering_concept {
   background-color: #7E7F7E !important;
   padding: 40px 0;
+}
+#for-catering .logo-box {
+    width: 206px;
+    height: 80%;
 }
 
 main section.concept p {
  color: #fff !important;
 }
-
-main sction
 
 /* =========== 
 2. Course
@@ -39,7 +45,13 @@ main .catering_food {
 main section.catering_food .texts {
     padding: 40px 0 !important;
   }
+main section.catering_food .images {
+  height: 505px;
+}
 
+.catering_food .fs_14{
+  font-size: 1.4rem !important;
+}
 @media screen and (max-width: 768px) {
   .food_space {
     margin-top: 0;
@@ -51,6 +63,9 @@ main section.catering_food .texts {
   }
   .catering_food .texts-box{
     line-height: 2.9rem;
+  }
+  main section.catering_food .images {
+    height: 100%;
   }
 }
 @media screen and (min-width: 769px){
@@ -77,16 +92,26 @@ main section.catering_food .texts {
 3. Contact
 =========== */
 .catering_contact {
-  background-color: #EDEDED !important;
+  background-color: #FFFFFF !important;
   color: #828282 !important;
+  padding: 0;
+}
+
+main#for-catering section.mori {
+  padding: 0;
+}
+main#for-catering section.mori .texts {
+  background-color: #EDEDED !important;
 }
 
 
+#for-catering .mori h2 {
+  color: #828282 !important;
+}
 
-
-
-
-
+#for-catering .mori h2:after {
+  background: #828282 !important;
+}
 
 
 
