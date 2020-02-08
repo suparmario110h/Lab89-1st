@@ -43,7 +43,8 @@ main .catering_food {
     background: #828282;
 }
 main section.catering_food .texts {
-    padding: 40px 0 !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
   }
 main section.catering_food .images {
   height: 505px;
@@ -91,6 +92,9 @@ main section.catering_food .images {
 /* =========== 
 3. Contact
 =========== */
+#for-catering section.mori {
+  background-color: #EDEDED !important;
+} 
 .catering_contact {
   background-color: #FFFFFF !important;
   color: #828282 !important;
@@ -113,12 +117,48 @@ main#for-catering section.mori .texts {
   background: #828282 !important;
 }
 
+/* =========== 
+4. 埋め込み
+=========== */
+ .embed-top {
+  margin-top: 3%;
+ }
 
 
 
+/* =========== 
+5. Insta
+=========== */
 
+.logo-label {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 3% 0;
+}
 
+.insta-logo {
+  width: 212px;
+  height: 100%;
+}
 
+.insta-images {
+  width: 100%;
+  height: 100%;
+}
+.iframe-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-top: 33.25%;
+}
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
 
