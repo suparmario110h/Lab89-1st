@@ -105,7 +105,7 @@ Main visual
     width: 260px;
     height: 100%;
     background-color: #fff;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     background: url(../images/logo.png);
     background-size: cover; 
 }
