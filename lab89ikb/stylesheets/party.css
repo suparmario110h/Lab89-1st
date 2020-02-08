@@ -77,9 +77,8 @@ main#for-party section {
   }
 
   .title_party{
-    font-size: 16px;
+  	font-size: 16px;
   }
-
 }
 /* =========== 
 2.Bussiness , 3.Wedding
@@ -173,9 +172,10 @@ main section.wedding {
   .space_l_day {
     margin-right: 40px;
   }
-    main#for-party section#contents {
-    padding: 0px;
+  main#for-party section#contents {
+  	padding: 0px;
   }
+
 }
 @media screen and (max-width: 320px) {
   .rental .plan-box {
