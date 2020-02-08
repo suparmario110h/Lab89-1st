@@ -203,6 +203,7 @@ main section.equipment,
   color: #fff;
   background-color: #10151a;
   border-bottom: 1px solid #fff;
+  width: 45px;
 }
 .td-name+td {
   padding-left: 20px;
@@ -249,6 +250,7 @@ main section.equipment,
   .eqipment-img{
     height: 211px;
   }
+
 }
 /* Option */
 .option .border {
