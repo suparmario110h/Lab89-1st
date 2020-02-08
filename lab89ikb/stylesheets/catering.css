@@ -19,6 +19,15 @@ main section.concept p {
  color: #fff !important;
 }
 
+@media screen and (max-width: 414px) {
+  .logo-box {
+    width: 109px !important;
+   }
+   .title_party {
+    font-size: 16px;
+   }
+}
+
 /* =========== 
 2. Course
 =========== */
@@ -56,6 +65,9 @@ main section.catering_food .images {
 @media screen and (max-width: 768px) {
   .food_space {
     margin-top: 0;
+  }
+  main section.catering_food .texts {
+    padding: 40px !important;
   }
   .catering_food div,
   .catering_food p,
@@ -117,11 +129,29 @@ main#for-catering section.mori .texts {
   background: #828282 !important;
 }
 
+.catering_contact .tel,
+.catering_contact .line,
+.catering_contact .mail{
+  width: 33%;
+}
+
 /* =========== 
 4. 埋め込み
 =========== */
  .embed-top {
   margin-top: 3%;
+ }
+
+ @media screen and (max-width: 768px) {
+  .sp-order-2 {
+    order: 2;
+  }
+  .sp-order-1 {
+    order: 1;
+  }
+  .position-fix {
+    /*padding-top: 70px;*/
+  }
  }
 
 
@@ -161,8 +191,12 @@ main#for-catering section.mori .texts {
 }
 
 
-
-
+@media screen and (max-width: 768px) {
+  .insta-logo {
+    width: 138px;
+    height: 100%;
+  }
+}
 
 
 
