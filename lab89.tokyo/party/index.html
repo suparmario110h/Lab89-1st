@@ -44,6 +44,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     gtag('config', 'UA-156482984-1');
   </script>
+  <!-- Global site tag (gtag.js) - Google Ads: 666584045 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-666584045"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-666584045');
+  </script>
+  <!-- Event snippet for 問い合わせ conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-666584045/VqXwCNu15cMBEO2H7b0C',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -83,7 +108,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="pc-header">
       <div class="left">
         <div class="top_tel">
-          <a href="tel:03-5924-6448">TEL: 03-5924-6448</a>
+          <a onclick="return gtag_report_conversion('tel:03-5924-6448');" href="tel:03-5924-6448">TEL: 03-5924-6448</a>
         </div>
       </div>
       <div class="right">
@@ -128,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="line"></div>
       </div>
       <div class="top_tel">
-          <a href="tel:03-5924-6448">TEL: 03-5924-6448</a>
+          <a onclick="return gtag_report_conversion('tel:03-5924-6448');" href="tel:03-5924-6448">TEL: 03-5924-6448</a>
         </div>
     </div>
     <ul class="menu">
@@ -436,7 +461,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="flex">
                 <div class="icon-space">
                   <div class="icon-posi i_tel">
-                    <a href="tel:03-5924-6448">
+                    <a onclick="return gtag_report_conversion('tel:03-5924-6448');" href="tel:03-5924-6448">
                        <img src="../images/contact/tel.png" alt="" class="tel">
                        <div class="icon-text">TEL</div>
                     </a>
@@ -444,7 +469,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="icon-space">
                   <div class="icon-posi i_line">
-                    <a href="https://line.me/R/ti/p/%40112mtjos">
+                    <a onclick="return gtag_report_conversion('https://line.me/R/ti/p/%40112mtjos');" href="https://line.me/R/ti/p/%40112mtjos">
                       <img src="../images/contact/line.png" alt="" class="line">
                       <div class="icon-text">LINE</div>
                     </a>
@@ -452,7 +477,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="icon-space">
                   <div class="icon-posi i_contact">
-                    <a href="https://forms.gle/YEJohpPmhdrCu9fL9">
+                    <a onclick="return gtag_report_conversion('https://forms.gle/YEJohpPmhdrCu9fL9');" href="https://forms.gle/YEJohpPmhdrCu9fL9">
                       <img src="../images/contact/mail.png" alt="" class="mail">
                       <div class="icon-text">CONTACT</div>
                     </a>
@@ -468,7 +493,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="information">
         <div class="logo"><img alt="moriji" src="../images/logo.png"></div>
         <div class="texts">
-          <p>TEL :<a href="tel:03-5924-6448">03-5924-6448</a></p>
+          <p>TEL :<a onclick="return gtag_report_conversion('tel:03-5924-6448');" href="tel:03-5924-6448">03-5924-6448</a></p>
           <p>Mail:<a href="mailto:info@ottantanove.tokyo">info@ottantanove.tokyo</a></p>
           <p>運営会社名 株式会社OTTANTANOVE</p>
         </div>
