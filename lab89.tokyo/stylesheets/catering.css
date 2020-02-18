@@ -13,6 +13,7 @@ main section.catering-visual {
 #for-catering .logo-box {
     width: 206px;
     height: 80%;
+    margin-bottom: auto;
 }
 
 main section.concept p {
@@ -24,7 +25,7 @@ main section.concept p {
     width: 109px !important;
    }
    .title_party {
-    font-size: 16px;
+    font-size: 12px;
    }
 }
 
